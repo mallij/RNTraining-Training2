@@ -1,0 +1,152 @@
+
+npm install or npm i
+
+
+To install react native
+
+npm i react-native  
+
+
+To create a new project
+
+	npx react-native init <ProjectName> 
+
+To run the project in iOS
+
+	npx react-native run-ios
+
+
+To run the project in Android 
+
+npx react-native run-android
+
+
+npx react-native start
+
+
+Project Structure
+
+	index.js - Starting point of execution in the React Native project.
+
+
+In React Native UI, there are some component which are called basic building blocks or fundamental components
+
+View -> Acts as a Parent/Container -> It is only meant for arranging the components/children in a particular manner according to the given properties.
+
+Text => Is used to display some text on the screen, with different properties like colour, fontSize, fontType, fontWeight, etc.
+
+TextInput => To take input from the user
+
+Button, TouchableOpacity, TouchableWithoutFeedback, TouchableHilight, Pressable => to trigger some action
+
+Image => To render images on the screen
+
+SafeAreaView => is to decide where the render should start in the screen
+
+
+ScrollView => to apply the scroll bars when the content size is exceeding the screen size
+
+FlatList => Used to render a List of components.
+	Need List of data (Array of info) along with the design that has to be applied to each element in the list
+SectionList => Group of items that are sub divided based on some similarity
+
+
+State Management => each has it’s own state by changing which the component will be re rendered
+
+useState is the hook we use to create and manage the state of a component
+
+
+========
+
+
+Navigation in React Native - Stack, Tab & Drawer
+
+npm install @react-navigation/native
+
+npm install react-native-screens react-native-safe-area-context
+
+Stack Navigation
+
+npm install @react-navigation/native-stack
+
+Navigation   - navigate() 
+				- push()
+
+navigation.goBack() - to go back to previous screen programatically
+Navigation.popToTop() - To go to the first screen of the stack.
+
+
+
+The following screenOptions/options elements can be used to place custom components in the header
+
+headerTitle =>
+headerLeft => 
+headerRight => 
+
+Tab Navigation
+
+npm install @react-navigation/bottom-tabs
+
+Drawer Navigation 
+npm i @react-navigation/drawer  
+npm install react-native-gesture-handler react-native-reanimated
+
+Add the following line to index.js file
+
+import 'react-native-gesture-handler';
+
+Add the following line to bebel.config.js after preset
+
+plugins: [
+    "react-native-reanimated/plugin",
+  ],
+
+Now start the metro bundler with the following which resets or clear the cache
+
+npx react-native start --reset-cache. 
+
+
+useEffect :
+
+componentDidMount
+componentDidUpdate
+componentWillUnMount
+
+
+Redux
+
+useSelector - read the from redux
+useDisptach - to trigger an action that will make a change in the redux
+
+
+Store => the place where the redux data is stored
+
+Reducer => is the function that has access to the store to make any changes
+
+Action => is the object handled by the reducer, and this action contains the information about the change to be made in the store
+
+
+npm i redux
+npm i react-redux  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+ 
